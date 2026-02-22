@@ -13,7 +13,7 @@ function Usuarios() {
   }, []);
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <div className="container">
       <h2>Usuários</h2>
       <UsuarioTable usuarios={usuarios} />
     </div>

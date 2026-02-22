@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p,
+td,
+th,
+button {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* Barra de navegação */
+nav {
+  background-color: #1976d2;
+  padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos */
+h1,
+h2 {
+  margin-bottom: 1rem;
+  color: #1976d2;
+}
+
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #1976d2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+tr:nth-child(even) {
+  background-color: #f3f6f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Botões */
+button {
+  margin-right: 0.5rem;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition:
+    transform 0.1s,
+    opacity 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+button:first-of-type {
+  background-color: #0288d1;
+  color: white;
+}
+
+button:last-of-type {
+  background-color: #2e7d32;
+  color: white;
 }

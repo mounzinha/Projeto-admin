@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
 import Dashboard from "./pages/Dashboard";
 import Pedidos from "./pages/Pedidos";
 import Estoque from "./pages/Estoque";

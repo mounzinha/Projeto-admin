@@ -24,7 +24,7 @@ function Pedidos() {
   };
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <div className="container">
       <h2>Pedidos</h2>
       <PedidoTable pedidos={pedidos} atualizarStatus={atualizarStatus} />
     </div>
