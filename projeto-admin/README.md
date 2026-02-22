@@ -10,7 +10,8 @@ Ele permite que o escritório visualize e gerencie os pedidos enviados pelos tra
 - React (frontend web)
 - React Router DOM (navegação entre páginas)
 - Axios (requisições HTTP)
-- Material UI (componentes visuais opcionais)
+- Chart.js + react-chartjs-2 (gráficos interativos)
+- Google Fonts (Poppins como fonte principal)
 - Node.js / Express (backend - já existente em outro repositório)
 - Banco de dados (MongoDB/MySQL/PostgreSQL, conforme configurado no backend)
 
@@ -40,7 +41,11 @@ cd Projeto-admin
 
 npm install
 
-### 3. Rodar o projeto
+### 3. Instalar pacotes adicionais
+
+npm install react-router-dom chart.js react-chartjs-2
+
+### 4. Rodar o projeto
 
 npm start
 
@@ -61,12 +66,13 @@ Exemplo de rotas esperadas:
 
 📋 Funcionalidades
 
+- Dashboard com cards de resumo e gráficos interativos (Chart.js)
 - Listar pedidos recebidos
 - Mostrar trabalhador, materiais, data e status
 - Atualizar status do pedido (ex.: "Encomendado", "Finalizado")
 - Controle de estoque (materiais e quantidades)
 - Lista de usuários cadastrados
-- Dashboard inicial com visão geral
+- Estilização moderna com fonte Poppins e layout responsivo
 
 👩‍💻 Contribuição
 
